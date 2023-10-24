@@ -1,5 +1,7 @@
 ﻿using Desafio_Blue_Tecnology.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Specialized;
+using System.ComponentModel;
 using System.Diagnostics;
 
 namespace Desafio_Blue_Tecnology.Controllers
@@ -9,24 +11,20 @@ namespace Desafio_Blue_Tecnology.Controllers
     [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
+        [HttpGet]
+       public async Task<IActionResult> Get()
 
-        private readonly IUserServices services;
-        private readonly IRepositoryUser repository;
 
-        private readonly IMapper mapper;
+       var Contatos = await this.services.GetAllUser();
 
-        public UserController(IUserServices services, IRepositoryUser repository)
-        {
-            this.services = services;
-            this.repository = repository;
-            this.mapper = mapper;
 
-        }
+
     }
-    
-        
-      
-        
+
+
+
+
+
 
 
 
