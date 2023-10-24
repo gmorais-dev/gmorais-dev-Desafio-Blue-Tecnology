@@ -8,7 +8,7 @@ namespace Desafio_Blue_Tecnology.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        "teste de unidade do swagger"
     };
 
         private readonly ILogger<WeatherForecastController> _logger;

@@ -1,10 +1,8 @@
 ﻿using Desafio_Blue_Tecnology.Models;
 
 namespace Desafio_Blue_Tecnology.Interfaces
-
-{   
-
-    public interface Repository
+{
+    public interface IRepositoryUser
     {
         Task<IEnumerable<Contatos>> GetAllUser();
         Task<Contatos> GetOneUser(String Name);
